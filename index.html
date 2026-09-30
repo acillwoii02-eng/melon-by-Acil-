@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b6b45">
+<title>Jadwal Pupuk Melon & Cabai</title>
+<style>
+:root{--g:#0b6b45;--g2:#18a36d;--bg:#f3fbf7;--ink:#17372a;--muted:#6d8077;--line:#dcebe3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0,#dff8e9,transparent 30%),var(--bg);overflow-x:hidden}
+header{min-height:570px;position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,#063f2a,#0b6b45 55%,#18a36d)}
+header:after{content:"";position:absolute;left:-10%;right:-10%;bottom:-170px;height:300px;background:var(--bg);border-radius:50% 50% 0 0}
+nav{position:absolute;top:0;left:0;right:0;padding:18px 0;z-index:3}.nav{width:min(1080px,92%);margin:auto;display:flex;justify-content:space-between;font-weight:900}.nav span{color:#b7e66d}
+.hero{width:min(1080px,92%);margin:auto;padding-top:120px;position:relative;z-index:2}.badge{display:inline-block;padding:8px 13px;border-radius:99px;background:#ffffff1c;border:1px solid #ffffff2c}
+h1{font-size:clamp(42px,8vw,78px);line-height:.98;letter-spacing:-3px;margin:20px 0 15px}.hero p{max-width:650px;line-height:1.65;color:#ddf6e9;font-size:18px}
+.btn{display:inline-block;padding:13px 18px;border-radius:14px;text-decoration:none;font-weight:800;margin:8px 8px 0 0;transition:.25s}.btn:hover{transform:translateY(-3px)}.white{background:#fff;color:var(--g)}.glass{color:#fff;background:#ffffff19;border:1px solid #ffffff33}
+.leaf{position:absolute;font-size:65px;opacity:.15;animation:float 7s ease-in-out infinite}.a{right:8%;top:20%}.b{right:23%;bottom:25%;animation-delay:-2s}.c{left:8%;bottom:28%;animation-delay:-4s}
+@keyframes float{50%{transform:translate(18px,-22px) rotate(9deg)}}
+main{width:min(1080px,92%);margin:-55px auto 0;position:relative;z-index:4}.panel{background:#ffffffe8;border:1px solid #fff;border-radius:26px;padding:22px;box-shadow:0 18px 50px #134c341c;backdrop-filter:blur(14px);margin-bottom:24px}
+.tabs{display:flex;gap:10px;overflow:auto}.tab{border:1px solid var(--line);background:#fff;color:var(--g);padding:12px 18px;border-radius:99px;font-weight:900;cursor:pointer;white-space:nowrap}.tab.active{background:var(--g);color:#fff}
+.section{display:none}.section.active{display:block;animation:up .4s ease}@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.head{margin:28px 0 18px}.head h2{font-size:31px;margin:0}.head p,.note{color:var(--muted)}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:20px 0}.mini{background:linear-gradient(145deg,#fff,#edf9f2);border:1px solid var(--line);border-radius:18px;padding:16px}.mini b{display:block;font-size:23px;color:var(--g)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;position:relative;overflow:hidden;transition:.3s}.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(var(--g2),#b7e66d)}.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #134c3414}.day{font-size:12px;color:var(--g);font-weight:900;text-transform:uppercase}.dose{font-size:25px;font-weight:950;margin:7px 0}.fert{font-weight:850}.note{font-size:13px;line-height:1.5;margin-top:7px}
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.rule{padding:18px;border:1px solid var(--line);border-radius:18px;background:#f8fcfa;line-height:1.55}.rule b{display:block;margin-bottom:5px}
+.reveal{opacity:0;transform:translateY(20px);transition:.7s}.show{opacity:1;transform:none}footer{text-align:center;padding:35px 15px 55px;color:var(--muted);font-size:13px}.top{position:fixed;right:17px;bottom:17px;width:45px;height:45px;border:0;border-radius:50%;background:var(--g);color:#fff;font-size:19px;z-index:9}
+@media(max-width:700px){.grid,.rules{grid-template-columns:1fr}.info{grid-template-columns:1fr 1fr}.hero p{font-size:16px}.head h2{font-size:27px}}
+@media(max-width:430px){.info{grid-template-columns:1fr}.panel{padding:15px}}
+</style>
+</head>
+<body>
+<header id="home">
+<nav><div class="nav">🌱 JADWAL<span>PUPUK</span><span style="color:#fff;font-weight:600">Melon • Cabai</span></div></nav>
+<div class="leaf a">🍃</div><div class="leaf b">🌿</div><div class="leaf c">🍃</div>
+<div class="hero">
+<div class="badge">🌿 Panduan praktis • dosis per 10 liter air</div>
+<h1>Jadwal Pupuk<br>Melon & Cabai</h1>
+<p>Website modern dengan jadwal dari semai, pertumbuhan, pembungaan, pembuahan hingga panen. Nyaman dibuka dari HP.</p>
+<a class="btn white" href="#jadwal">Lihat Jadwal ↓</a><a class="btn glass" href="#aturan">Aturan Penting</a>
+</div>
+</header>
+
+<main id="jadwal">
+<section class="panel reveal">
+<div class="tabs"><button class="tab active" data-x="melon">🍈 Melon</button><button class="tab" data-x="cabai">🌶️ Cabai</button></div>
+
+<div id="melon" class="section active">
+<div class="head"><h2>🍈 Jadwal Melon</h2><p>Media 1 sekam bakar : 1 kohe matang : 1 tanah</p></div>
+<div class="info"><div class="mini"><b>10 L</b>air per aplikasi</div><div class="mini"><b>1 : 1 : 1</b>media tanam</div><div class="mini"><b>HST</b>hari setelah tanam</div></div>
+<div class="grid">
+<div class="card"><div class="day">Hari 1–10 • Semai</div><div class="dose">½ sdm</div><div class="fert">POC kohe matang</div><div class="note">Encerkan. Siram ringan, jangan becek.</div></div>
+<div class="card"><div class="day">HST 3–7</div><div class="dose">½ sdm</div><div class="fert">NPK Mutiara 16-16-16</div><div class="note">Untuk adaptasi dan pertumbuhan awal.</div></div>
+<div class="card"><div class="day">HST 10–14</div><div class="dose">1 sdm</div><div class="fert">NPK 16-16-16</div><div class="note">Berikan saat media cukup lembap.</div></div>
+<div class="card"><div class="day">HST 17–21</div><div class="dose">1 sdm</div><div class="fert">NPK 16-16-16 + asam humat</div><div class="note">Asam humat mengikuti label produk.</div></div>
+<div class="card"><div class="day">HST 24–30</div><div class="dose">1 sdm</div><div class="fert">Ultradap</div><div class="note">Persiapan pembungaan.</div></div>
+<div class="card"><div class="day">HST 33–36</div><div class="dose">1 sdm</div><div class="fert">MKP</div><div class="note">Dukung pembungaan.</div></div>
+<div class="card"><div class="day">HST 39–45</div><div class="dose">1 sdm</div><div class="fert">MKP</div><div class="note">Fase bunga dan persiapan polinasi.</div></div>
+<div class="card"><div class="day">H+2–H+7</div><div class="dose">1 sdm</div><div class="fert">KNO3 putih</div><div class="note">Setelah polinasi, pembesaran awal buah.</div></div>
+<div class="card"><div class="day">H+10–H+17</div><div class="dose">1 sdm</div><div class="fert">KNO3 putih + MgSO4</div><div class="note">Untuk pengisian buah.</div></div>
+<div class="card"><div class="day">H+20–H+30</div><div class="dose">1 sdm</div><div class="fert">KNO3 putih</div><div class="note">Pantau respon tanaman.</div></div>
+<div class="card"><div class="day">H+33–H+40</div><div class="dose">½–1 sdm</div><div class="fert">MKP</div><div class="note">Masuk fase pematangan, kurangi intensitas.</div></div>
+<div class="card"><div class="day">H+41 sampai panen</div><div class="dose">½ sdm</div><div class="fert">Air / POC sangat encer bila perlu</div><div class="note">Hentikan pemupukan berat menjelang panen.</div></div>
+</div></div>
+
+<div id="cabai" class="section">
+<div class="head"><h2>🌶️ Jadwal Cabai</h2><p>Dari semai sampai panen pertama dan pemeliharaan.</p></div>
+<div class="info"><div class="mini"><b>10 L</b>air per aplikasi</div><div class="mini"><b>HSS</b>hari setelah semai</div><div class="mini"><b>HST</b>hari setelah tanam</div></div>
+<div class="grid">
+<div class="card"><div class="day">HSS 0–7</div><div class="dose">Air saja</div><div class="fert">Tanpa pupuk pekat</div><div class="note">Jaga media lembap, tidak tergenang.</div></div>
+<div class="card"><div class="day">HSS 8–14</div><div class="dose">½ sdm</div><div class="fert">POC kohe matang</div><div class="note">Larutan encer untuk bibit muda.</div></div>
+<div class="card"><div class="day">HSS 15–21</div><div class="dose">½ sdm</div><div class="fert">NPK 16-16-16</div><div class="note">Jangan terlalu pekat.</div></div>
+<div class="card"><div class="day">HSS 22–30</div><div class="dose">½–1 sdm</div><div class="fert">NPK 16-16-16</div><div class="note">Sesuaikan ukuran bibit.</div></div>
+<div class="card"><div class="day">HST 3–10</div><div class="dose">1 sdm</div><div class="fert">NPK 16-16-16</div><div class="note">Setelah pindah tanam, beri waktu adaptasi.</div></div>
+<div class="card"><div class="day">HST 13–20</div><div class="dose">1 sdm</div><div class="fert">NPK 16-16-16 + asam humat</div><div class="note">Dorong akar dan tajuk.</div></div>
+<div class="card"><div class="day">HST 23–30</div><div class="dose">1 sdm</div><div class="fert">NPK 16-16-16</div><div class="note">Akhir fase vegetatif.</div></div>
+<div class="card"><div class="day">HST 33–40</div><div class="dose">1 sdm</div><div class="fert">Ultradap</div><div class="note">Persiapan pembungaan.</div></div>
+<div class="card"><div class="day">HST 43–50</div><div class="dose">1 sdm</div><div class="fert">MKP</div><div class="note">Dukung pembentukan bunga.</div></div>
+<div class="card"><div class="day">HST 53–60</div><div class="dose">1 sdm</div><div class="fert">MKP + MgSO4</div><div class="note">Pisahkan aplikasi bila produk tidak kompatibel.</div></div>
+<div class="card"><div class="day">HST 63–75</div><div class="dose">1 sdm</div><div class="fert">KNO3 putih</div><div class="note">Fase buah awal.</div></div>
+<div class="card"><div class="day">HST 78–105+</div><div class="dose">1 sdm</div><div class="fert">KNO3 putih / MKP bergantian</div><div class="note">Pemeliharaan buah; kurangi bila terlalu subur.</div></div>
+</div></div>
+</section>
+
+<section class="panel reveal" id="aturan">
+<div class="head"><h2>⚠️ Aturan Penting</h2><p>Panduan agar pemupukan lebih aman.</p></div>
+<div class="rules">
+<div class="rule"><b>🥄 Patokan sendok</b>± 1 sdm pupuk bubuk = 15 g. Berat dapat berbeda menurut produk.</div>
+<div class="rule"><b>🚫 Jangan campur semua</b>Jangan memasukkan seluruh pupuk ke satu tangki. Pisahkan aplikasi yang tidak kompatibel.</div>
+<div class="rule"><b>💧 Kondisi tanah</b>Aplikasikan saat media cukup lembap. Hindari pemupukan ketika media sangat kering.</div>
+<div class="rule"><b>🌱 POC</b>POC kohe matang digunakan berkala dan encer, bukan setiap hari.</div>
+<div class="rule"><b>🍈 Melon</b>Setelah polinasi, fokus ke pengisian dan kualitas buah; jangan mengejar daun dengan nitrogen tinggi.</div>
+<div class="rule"><b>🌶️ Cabai</b>Jika daun terlalu rimbun tetapi bunga sedikit, evaluasi nitrogen dan fase tanaman.</div>
+</div></section>
+</main>
+<footer>🌿 Jadwal Pupuk • Melon & Cabai<br>Gunakan sebagai panduan awal dan sesuaikan dengan label produk, cuaca, media, dan respons tanaman.</footer>
+<button class="top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+const tabs=document.querySelectorAll('.tab'), secs=document.querySelectorAll('.section');
+tabs.forEach(t=>t.onclick=()=>{tabs.forEach(x=>x.classList.remove('active'));t.classList.add('active');secs.forEach(s=>s.classList.toggle('active',s.id===t.dataset.x));document.querySelector('#jadwal').scrollIntoView({behavior:'smooth'})});
+const ob=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(x=>ob.observe(x));
+</script>
+</body></html>
